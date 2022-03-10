@@ -1,0 +1,40 @@
+.products {
+  background: #000;
+}
+
+.products__main-title {
+  padding-top: 120px;
+}
+
+.products__wrapper {
+  width: 100%;
+  padding: 120px 0 150px;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px 23px;
+}
+
+.products__item {
+  max-width: 260px !important;
+}
+
+.products__img {
+  max-width: 215px !important;
+}
+
+@media (max-width: 768px) {
+  .products__wrapper {
+    column-gap: 40px;
+    padding: 90px 0;
+  }
+
+  .products__main-title {
+    padding-top: 70px;
+  }
+  
+  .products__item {
+    max-width: 220px !important;
+  }
+}

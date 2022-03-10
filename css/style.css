@@ -1,0 +1,91 @@
+/* NORMALIZE CSS */
+@import "normalize.css";
+
+/* HEADER CSS */
+@import "header.css";
+
+/* MAIN SECTION CSS */
+@import "main-sec.css";
+
+/* SEASON SECTION CSS */
+@import "season.css";
+
+/*  COLLECT SECTION CSS */
+@import "collect.css";
+
+/*  PRODUCTS SECTION CSS */
+@import "products.css";
+
+/*  BRANDS SECTION CSS */
+@import "brands.css";
+
+.gen-title {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  position: relative;
+}
+
+.gen-title::after {
+  content: "";
+  width: 20%;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.gen-item {
+  width: 100%;
+  max-width: 220px;
+}
+
+.gen-item__img-bl {
+  background: #191b1c;
+  padding: 55px 22px;
+  display: flex;
+  justify-content: center;
+}
+
+.gen-item__img {
+  width: 100%;
+  max-width: 165px;
+}
+
+.gen-item__title {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  margin: 25px 0 10px;
+}
+
+.gen-item__price {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  color: #d0d0d0;
+}
+
+@media (max-width: 992px) {
+  .gen-title {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 575px) {
+  .gen-title {
+    font-size: 24px;
+  }
+}
